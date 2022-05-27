@@ -5,10 +5,17 @@ import java.util.Scanner;
 public class Notas {
 
 public static void main(String[] args) {
-cali();
+califica();
 }
 
+/**
+ * @deprecated Use {@link #califica()} instead
+ */
 public static void cali() {
+	califica();
+}
+
+public static void califica() {
 	Scanner reader = new Scanner(System.in);// Para pedir números por teclado
 	int n = 0;
 	String mensaje = "";
