@@ -7,22 +7,22 @@ public class Notas {
 public static void main(String[] args) {
 Scanner reader = new Scanner(System.in);// Para pedir números por teclado
 int n = 0;
-String c = "";
+String mensaje = "";
 System.out.print("Introduzca una nota: ");
 n = reader.nextInt();
 
 if (n >= 0 && n < 5)
-c = "Suspenso";
+mensaje = "Suspenso";
 else if (n >= 5 && n < 7)
-c = "Aprobado";
+mensaje = "Aprobado";
 else if (n >= 7 && n <9)
-c = "Notable";
+mensaje = "Notable";
 else if (n >= 9 && n <= 10)
-c = "Sobresaliente";
+mensaje = "Sobresaliente";
 else
-c = "La nota introducida no es correcta";
+mensaje = "La nota introducida no es correcta";
 
-System.out.println(c);
+System.out.println(mensaje);
 reader.close();
 }
 }
